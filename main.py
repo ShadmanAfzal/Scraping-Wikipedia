@@ -13,6 +13,7 @@ for x in range(2, 6):
             for k in j.find_all('a'):
                 movies.append(k.get_text())
 with open(f'movies_list_{date}.txt', 'w') as file:
+    file.write(f"Movies of {date}:\n\n")
     count = 0
     for i in movies:
         count += 1
