@@ -24,11 +24,11 @@ def create_txt(year, movie):
             count += 1
             file.write(f'{count}. {i} \n')
         print("Done...")
-        print("Data has been store in " + f"movies_list_{year}.txt")
+        print("Data has been store in the" + f"movies_list_{year}.txt")
 
 
 if __name__ == '__main__':
-    year = int(input("Enter the year"))
+    year = int(input("Please enter the year"))
     movies = scrape()
     choice = int(input("enter 1 to create txt file\n 2 for printing file\n 3 do nothing"))
     if choice == 1:
